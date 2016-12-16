@@ -1,0 +1,49 @@
+﻿@model FinalProject.Models.HomeViewModel
+
+
+<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet">
+        <title>Final Project</title>
+    </head>
+
+   <body>
+        <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+        
+        <div class="home">
+        	
+        	<h1>Welcome to Cuyahoga Community College Student Services Online</h1>
+        	<p class="paragraph">Cuyahoga Community College recognizes students' rights to access
+        		personal and academic records in accordance with the Family Educational Rights and Privacy
+				Act of 1974 (FERPA) as amended by Public Law 93-568.</p>
+			
+			<div class="container">
+				<div class="top">
+				<p class="paragraph2">Already have an account with us?<br>Returning users may login by entering<br>their site username and password.</p>
+				<form class="user1">
+					<label class="alignInputs">Username</label> <input class="alignInputs" type="text" name="oldUsername"><br>
+					<label class="alignInputs">Password</label> <input class="alignInputs" type="password" name="oldPassword"><br>
+					<input type="submit" value="login" class="login" onclick="logIn()">
+				</form>
+				</div>
+				<hr>
+				<div class="bottom">
+					<p class="paragraph2">New users, please create a<br>new account by providing us<br>with some basic information.</p>
+					<form class="user2">
+						<label>Username</label> <input type"text" name="newUsername"><br>
+						<label>Password</label> <input type="password" name="newPassword"><br>
+						<label>E-mail Address</label> <input type="email" name="email"><br>
+						<label>Repeat E-mail Address</label> <input type="email" name="repeatEmail"><br>
+						<input type="submit" value="login" class="createAccount">
+					</form>
+				</div>
+				
+			</div>
+			<footer>Cuyahoga Community College<br>700 Carnegie Avenue, Cleveland, Ohio 44115</footer>	
+        </div>
+    </body>
+
+</html>

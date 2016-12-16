@@ -1,0 +1,106 @@
+﻿.home
+{
+	max-width: 700px;
+	font-family: calibri;
+	margin: auto;
+	transform: rotateX(15deg);
+}
+h1 
+{
+	font: bold 23px 'customFont';
+	text-align: left;	
+	animation-name: coloredHeader;
+	animation-duration: 6s;
+}
+p.paragraph 
+{
+	font: italic 14px calibri;
+}
+.container 
+{
+	border: 2px solid black;
+	border-radius: 28px;	
+	font-size: 14px;
+	padding: 20px;
+}
+.top
+{
+	display: inline-block;
+}
+.top form
+{
+	float: left;
+	padding: 15px;
+	margin-left: 50px;
+	
+}
+.top p
+{
+	float: left;
+	font-size: 17px;
+}
+.bottom
+{
+	display: inline-block;
+}
+.bottom form
+{
+	float: left;
+	padding: 15px;
+	margin-left: 100px;
+}
+.bottom p
+{
+	float: left;
+	font-size: 17px;
+}
+.button
+{
+	background-color: #28739E;
+	border-radius: 28px;
+	border: 1px solid black;
+	font-size: 28px;
+	margin-top: 15px;
+	float: right;
+}
+.button:hover
+{
+	transition: transform 2s;
+	transform: rotateX(-360deg);
+}
+label
+{
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+	
+}
+input
+{
+	margin-bottom: 15px;
+	margin-left: 15px;
+	float: right;
+}
+footer
+{
+	margin-top: 15px;
+}
+@font-face
+{
+	font-family: 'customFont';
+	src: url('Kingthings_Christmas_2.ttf');
+}
+@keyframes coloredHeader
+{
+	0% {color: red;}
+	25% {color: green;}
+	50% {color: red;}
+	75% {color: green;}
+	100% {color: black;}
+}
+@media screen and (max-width: 320px)
+{
+	.paragraph2 {visibility: hidden;}
+	form.user2 label {padding-right: 55px; clear: both;}
+	form.user2 input {width: 100px;}
+}
